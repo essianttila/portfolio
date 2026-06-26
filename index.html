@@ -9,6 +9,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo:wght@600;700;800&family=Caveat:wght@700&family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+  @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-50%, 0, 0); }
+  }
+  .animate-ticker {
+    animation: ticker 25s linear infinite;
+  }
+</style>
 </head>
 <body>
 
@@ -31,7 +40,7 @@
       </header>
       <div class="absolute left-3.5 top-1/2 z-[5] origin-center -rotate-90 -translate-y-1/2 whitespace-nowrap text-[10.5px] font-bold tracking-[0.26em] uppercase opacity-55" style="font-family:'Archivo',sans-serif;color:var(--ink);">Copywriter &amp; Brand Designer</div>
       <div class="absolute right-3.5 top-1/2 z-[5] origin-center rotate-90 -translate-y-1/2 whitespace-nowrap text-[10.5px] font-bold tracking-[0.26em] uppercase opacity-55" style="font-family:'Archivo',sans-serif;color:var(--ink);">Portfolio · 2026</div>
-      <div class="absolute left-0 right-0 z-[1] flex justify-center pointer-events-none" style="top:calc(50% - 22px);transform:translateY(-50%);">
+      <div class="absolute left-0 right-0 z-[1] flex justify-center pointer-events-none" style="top:calc(50% - 22px);transform:yarn animate-ticker; z-index: 10;">
         <h1 style="font-family:'Abril Fatface',serif;color:var(--ink);font-size:17.5vw;line-height:.9;letter-spacing:-.005em;" class="m-0 whitespace-nowrap uppercase">Portfolio</h1>
       </div>
       <div class="absolute left-[33%] z-[5] -translate-x-1/2 pointer-events-none" style="top:calc(50% - 23vh);"><span style="font-family:'Caveat',cursive;color:var(--accent);font-size:clamp(44px,8.5vw,120px);text-shadow:0 2px 18px rgba(0,0,0,.18);transform:rotate(-5deg);" class="font-bold leading-none inline-block">Creative</span></div>
@@ -50,7 +59,18 @@
       </div>
     </section>
     <div class="ticker-wrap overflow-hidden whitespace-nowrap py-6" style="background:var(--block);color:#F2EDE1;">
-      <div class="ticker-track inline-block" style="font-family:'DM Serif Display',serif;font-size:clamp(28px,3.4vw,46px);letter-spacing:.03em;text-transform:uppercase;"><span class="px-[26px]">Brand voice</span><span style="color:var(--pop);">✦</span><span class="px-[26px]">Storytelling</span><span style="color:var(--pop);">✦</span><span class="px-[26px]">Localisation</span><span style="color:var(--pop);">✦</span><span class="px-[26px]">Strategic copy</span><span style="color:var(--pop);">✦</span><span class="px-[26px]">Hospitality insider</span><span style="color:var(--pop);">✦</span></div>
+      <div class="ticker-track animate-ticker flex w-fit" style="font-family:'DM Serif Display',serif;font-size:clamp(28px,3.4vw,46px);letter-spacing:.03em;text-transform:uppercase;">
+        <span class="px-[26px]">Brand voice</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Storytelling</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Localisation</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Strategic copy</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Hospitality insider</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Brand voice</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Storytelling</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Localisation</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Strategic copy</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Hospitality insider</span><span style="color:var(--pop);">✦</span>
+      </div>
     </div>
     <section id="en-about" class="grid gap-14 items-center px-14 py-24" style="grid-template-columns:.9fr 1.1fr;">
       <div class="flex justify-center">
@@ -109,7 +129,7 @@
           <p class="text-[14.5px] leading-relaxed mt-4" style="color:#46493E;">Transformed dense, highly technical data and AI-drafted website copy into warm, accessible, and human language — bridging the gap between complex tech and the decision-makers who need to understand it.</p>
         </article>
       </div>
-<div class="rounded-[10px] mt-12 grid gap-10 items-center overflow-hidden" style="background:var(--ink);color:#F2EDE1;padding:56px 48px 0;grid-template-columns:0.48fr 1.52fr;">
+      <div class="rounded-[10px] mt-12 grid gap-10 items-center overflow-hidden" style="background:var(--ink);color:#F2EDE1;padding:56px 48px 0;grid-template-columns:0.48fr 1.52fr;">
         <img src="media/standing-cutout.png" alt="Essi Anttila" class="justify-self-center self-end w-auto max-w-full" style="height:clamp(340px,30vw,470px);filter:drop-shadow(0 16px 28px rgba(0,0,0,.28));" onerror="this.style.display='none'">
         <div class="pb-14">
           <span style="font-family:'Archivo',sans-serif;color:var(--pop);" class="text-[12px] font-bold tracking-[0.2em] uppercase">On copywriting</span>
@@ -209,7 +229,18 @@
       </div>
     </section>
     <div class="ticker-wrap overflow-hidden whitespace-nowrap py-6" style="background:var(--block);color:#F2EDE1;">
-      <div class="ticker-track inline-block" style="font-family:'DM Serif Display',serif;font-size:clamp(28px,3.4vw,46px);letter-spacing:.03em;text-transform:uppercase;"><span class="px-[26px]">Brändiääni</span><span style="color:var(--pop);">✦</span><span class="px-[26px]">Tarinankerronta</span><span style="color:var(--pop);">✦</span><span class="px-[26px]">Lokalisointi</span><span style="color:var(--pop);">✦</span><span class="px-[26px]">Strateginen copy</span><span style="color:var(--pop);">✦</span><span class="px-[26px]">Ravintola–alan insider</span><span style="color:var(--pop);">✦</span></div>
+      <div class="ticker-track animate-ticker flex w-fit" style="font-family:'DM Serif Display',serif;font-size:clamp(28px,3.4vw,46px);letter-spacing:.03em;text-transform:uppercase;">
+        <span class="px-[26px]">Brändiääni</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Tarinankerronta</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Lokalisointi</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Strateginen copy</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Ravintola–alan insider</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Brändiääni</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Tarinankerronta</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Lokalisointi</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Strateginen copy</span><span style="color:var(--pop);">✦</span>
+        <span class="px-[26px]">Ravintola–alan insider</span><span style="color:var(--pop);">✦</span>
+      </div>
     </div>
     <section id="fi-about" class="grid gap-14 items-center px-14 py-24" style="grid-template-columns:.9fr 1.1fr;">
       <div class="flex justify-center">
@@ -267,7 +298,8 @@
           </div>
           <p class="text-[14.5px] leading-relaxed mt-4" style="color:#46493E;">Käänsin monimutkaiset tekniset sisällöt ja tekoälyluonnostellut verkkosivutekstit selkeäksi ja helposti lähestyttäväksi B2B-viestinnäksi. Rakensin asiantuntijateksteistä siltoja, jotka herättävät luottamusta ja tekevät monimutkaisesta teknologiasta ymmärrettävää.</p>
         </article>
-      </div><div class="rounded-[10px] mt-12 grid gap-10 items-center overflow-hidden" style="background:var(--ink);color:#F2EDE1;padding:56px 48px 0;grid-template-columns:0.48fr 1.52fr;">
+      </div>
+      <div class="rounded-[10px] mt-12 grid gap-10 items-center overflow-hidden" style="background:var(--ink);color:#F2EDE1;padding:56px 48px 0;grid-template-columns:0.48fr 1.52fr;">
         <img src="media/standing-cutout.png" alt="Essi Anttila" class="justify-self-center self-end w-auto max-w-full" style="height:clamp(340px,30vw,470px);filter:drop-shadow(0 16px 28px rgba(0,0,0,.28));" onerror="this.style.display='none'">
         <div class="pb-14">
           <span style="font-family:'Archivo',sans-serif;color:var(--pop);" class="text-[12px] font-bold tracking-[0.2em] uppercase">Ajatuksia copywritingista</span>
